@@ -1,0 +1,65 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "one",
+      "lastName": "one",
+      "email": "one@gmail.com",
+      "dob": "3121-02-12",
+      "gender": "male",
+      "education": "Matric",
+      "company": "linkedin",
+      "salary": "12",
+      "id": 6
+    },
+    {
+      "firstName": "test3",
+      "lastName": "test3",
+      "email": "test3@gmail,com",
+      "dob": "21122-03-12",
+      "gender": "male",
+      "education": "Intermediate",
+      "company": "Amazon",
+      "salary": "22",
+      "id": 10
+    },
+    {
+      "firstName": "porew",
+      "lastName": "nkenvkend",
+      "email": "njnjn@gmail.com",
+      "dob": "1111-12-12",
+      "gender": "male",
+      "education": "Diploma",
+      "company": "goole",
+      "salary": "23",
+      "id": 12
+    },
+    {
+      "firstName": "test2",
+      "lastName": "test2",
+      "email": "test2@gmail.com",
+      "dob": "2000-12-03",
+      "gender": "male",
+      "education": "Intermediate",
+      "company": "TCS",
+      "salary": "25",
+      "id": 13
+    }
+  ]
+}

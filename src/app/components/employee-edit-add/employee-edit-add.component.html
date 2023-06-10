@@ -1,0 +1,50 @@
+<div mat-dialog-title class="text-center">
+    <h1 color="primary">
+
+        Employee Form
+    </h1>
+</div>
+<form [formGroup]="employeeFrom" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content>
+        <div>
+            <div class="d-flex mt-small">
+                <input type="text" formControlName="firstName" placeholder="FirstName">
+                <input type="text" formControlName="lastName" placeholder="LastName">
+            </div>
+            <div class="d-flex mt-small">
+                <input type="email" formControlName="email" placeholder="email">
+                <input type="date" formControlName="dob" title="Date of Birth">
+            </div>
+            <div class="mt-small">
+                <mat-radio-group aria-label="Select an option" formControlName="gender">
+                    Gender
+                    <mat-radio-button value="male">Male</mat-radio-button>
+                    <mat-radio-button value="female">Female</mat-radio-button>
+                    <mat-radio-button value="others">Others</mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div>
+                <select class="education" formControlName="education">
+                    <option>Education</option>
+                    <ng-container *ngFor="let value of EducationList">
+                        <option value="1" [value]="value">{{value}}</option>
+
+                    </ng-container>
+
+                </select>
+            </div>
+            <div class="mt-small">
+                <label for="company">Company</label>
+                <input type="text" name="company" id="company" placeholder="Ex:- Google" formControlName="company" />
+                <label for="salary" class="mt-small">Salary</label>
+                <input type="text" name="salary" id="salary" placeholder="Ex:- 12LPA" title="In INR"
+                    formControlName="salary" />
+            </div>
+        </div>
+
+    </div>
+    <div mat-dialog-actions class="d-flex action-btn">
+        <button mat-raised-button type="button" [mat-dialog-close]="false ">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update':'Save'}}</button>
+    </div>
+</form>
